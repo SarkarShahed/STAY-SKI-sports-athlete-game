@@ -1,0 +1,581 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*google fonts name here
+
+
+font-family: 'Catamaran', sans-serif;
+font-family: 'muli';
+
+*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ body{
+ 	font-family: "muli"
+ }
+
+ ul{
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ li{
+ 	list-style: none;
+ }
+
+ a{
+ 	text-decoration: none;
+ }
+
+ /*=======================*/
+
+.header-background{
+	background: url(../img/banner.jpg) no-repeat center;
+	background-size: cover;
+}
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link{
+	color: #eee;
+}
+.navbar-light .navbar-nav .nav-link{
+	margin: 20px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	position: relative;
+	transition: 0.5s ease-in-out;
+}
+
+
+.navbar-light .navbar-nav .nav-link::after{
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff690f;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    bottom: 0;
+    transition: .3s ease transform;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    transform: translateX(-50%) scale(1);
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #eee;
+    transform: scale(1.1);
+}
+
+.inner-container{
+	padding: 400px 0 100px;
+}
+.banner-content p{
+	font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+}
+.btn-booking{
+	width: 200px;
+    height: 50px;
+    color: #fff;
+    background: #ff690f;
+    border: none;
+    margin: 30px 0;
+    letter-spacing: 1px;
+    font-family: "muli";
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+.btn-booking:hover{
+	background: rgba(255,105,15,0.7);
+	transition: 0.5s ease-in-out;
+}
+
+
+/*===================
+offer section start
+=====================*/
+
+.offer{
+	padding: 100px 0;
+	background: #fff;
+}
+
+.free-heading{
+	padding: 0 0 100px;
+}
+.free-heading h1{
+	font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.free-heading p{
+    font-family: 'Catamaran', sans-serif;
+    margin: 0 200px;
+    font-size: 19px;
+    line-height: 40px;
+}
+.sell-side{
+	height: 450px;
+	background: linear-gradient(145deg, #eee, #ffffff);
+box-shadow:  5px 5px 10px #d6d6d6,
+             -5px -5px 10px #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    box-sizing: border-box;
+    width: 90%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+}
+.sell-side::after{
+	content: '';
+	position: absolute;
+	left: -100%;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #ff690f;
+	transition: 0.5s ease-in-out;
+}
+.sell-side:hover::after{
+	left: 0;
+}
+.sell-side:hover img{
+	transform: scale(1.1);
+}
+.sell-side:hover{
+	border-radius: 5px;
+	background: #ffffff;
+	box-shadow:  5px 5px 37px #d6d6d6,
+             -5px -5px 37px #ffffff;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.sell-side img{
+	display: block;
+	margin: 20px auto;
+	transition: 0.5s ease-in-out;
+}
+
+.sell-side p {
+    color: #7f7f7f;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    margin: 10px;
+}
+.sell-side h4{
+	text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin: 10px;
+    font-weight: 900;
+}
+ 
+.sell-side .btn-from{
+    color: #fff;
+    display: block;
+    background: #ff690f;
+    border: none;
+    padding: 10px;
+    margin: 30px auto;
+    font-family: "muli";
+    text-align: center;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+}
+.sell-side .btn-from:hover{
+	background: rgba(255,105,15,0.9);
+	transition: 0.5s ease-in-out;
+}
+
+/*==================================
+gallery section start
+====================================*/
+
+.gallery{
+	padding: 100px 0;
+}
+
+.gallery-img img{
+	max-width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+.no-padding-margin{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*==============================
+		crew section start
+===============================*/
+
+.crew{
+	 padding-bottom: 100px;
+}
+
+.crew-heading h1{
+	font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.crew-img img{
+	display: block;
+	margin: 20px auto;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+.crew-img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.crew-img::after{
+	content: '';
+	position: absolute;
+	left: -100%;
+	height: 2px;
+	bottom: 0;
+	width: 100%;
+	background: #ff690f;
+	transition: 0.5s ease-in-out;
+}
+.crew-img:hover::after{
+	left: 0;
+}
+.crew-img p {
+    color: #7f7f7f;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    margin: 10px;
+}
+.crew-img h4{
+	text-align: center;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin: 10px;
+    font-weight: 900;
+}
+
+/*=======================
+counter section 
+========================*/
+.About{
+	background: url(../img/about.png) no-repeat center;
+	background-size: cover;
+	padding: 150px 0;
+}
+.counter-content h1{
+	display: block;
+	font-size: 30px;
+	color: #000;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+.counter-content p{
+	font-size: 18px;
+	margin: 20px 0;
+}
+
+.counter{
+	margin: 30px 0;
+}
+.counter h1{
+	font-size: 50px;
+	color: #ff690f;
+	font-weight: 800;
+}
+
+.counter p{
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+/*========================================
+	slider section start
+==========================================*/
+
+.slider{
+	background: #fff;
+	margin: 50px 0;
+}
+.t-heading h1{
+	font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.slider-iteam{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	text-align: center;
+	border-radius: 8px;
+}
+.slider-iteam h3{
+	color: red;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+.slider-iteam  p{
+	font-size: 18px;
+	font-size: 18px;
+    margin: 0 225px;
+    text-align: center;
+}
+.slider-iteam img {
+    max-width: 10%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/*.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff690f;
+}*/
+/*.owl-theme .owl-dots, .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    width: 20px;
+}*/
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff690f;
+    width: 25px;
+}
+
+
+
+/*=============================
+footer section start
+===============================*/
+footer{
+	background: #2f2f2f;
+	padding: 50px 0;
+}
+.info-side ul li a{
+	display: inline-block;
+}
+.info-side h1{
+	font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #fff; 
+}
+.info-side  i{
+	color: #ff600a;
+	font-size: 20px;
+	margin: 20px 20px 20px 0;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	opacity: 1;
+}
+.info-side  i::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border: 2px solid #ff600a;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s ease-in-out;
+}
+.info-side  i:hover::after{
+	z-index: 1;
+	top: 0;
+}
+.info-side span{
+	font-size: 16px;
+	color: #fff;
+}
+.footer-social ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin: 20px;
+	overflow: hidden;
+	line-height: 50px;
+	text-align: center;
+}
+.footer-social ul li::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: -100%;
+	left: 0;
+	border: 2px solid #ff600a;
+	border-radius: 5px;
+	transition: 0.5s ease-in-out;
+}
+.footer-social ul li:hover::after{
+	top: 0;
+}
+.footer-social ul li a i{
+	font-size: 40px;
+	color: #ff600a;
+	line-height: 50px;
+}
+.map{
+	width: 100%;
+	height: auto;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+/*{
+	background: red;
+	background: green;
+	background: lightgreen;
+	background: #f9f9f9;
+	background: 
+}*/
+
+
+
+
+/*==========================================================
+		media query section work 
+============================================================*/
+
+/*--nootbook media query*/
+@media (min-width: 768px) and (max-width: 990px){
+
+}
+
+
+/*---tablet device media query--*/
+@media (min-width: 575px) and (max-width: 768px){
+
+}
+
+/*---mobile device media query--*/
+@media (min-width: 320px) and (max-width: 575px){
+	.navbar-brand img{
+		max-width: 100px;
+	}
+	.inner-container{
+	    padding: 60px 0px !important;
+	}
+	.banner-content p {
+	    font-size: 16px;
+	    text-align: center;
+	    line-height: 30px;
+	    margin-top: 50px;
+	}
+
+	.btn-booking {
+	    padding: 10px 25px;
+	    color: #fff;
+	    background: #ff690f;
+	    border: none;
+	    font-size: 14px;
+	    letter-spacing: 1px;
+	    font-family: "muli";
+	    text-align: center;
+	    position: relative;
+	    transition: 0.5s ease-in-out;
+	    display: block;
+	    margin: auto;
+	}
+	.offer {
+	    padding: 50px 0;
+	}
+	.free-heading p {
+	    font-family: 'Catamaran', sans-serif;
+	    margin: 0;
+	    font-size: 19px;
+	    line-height: 40px;
+	}
+	.free-heading {
+	    padding: 0 0 50px;
+	}
+		.gallery {
+	    padding: 50px 0;
+	}
+		.crew {
+	    padding-bottom: 50px;
+	}
+	.crew-img img {
+	    display: block;
+	    margin: 20px auto;
+	    transition: 0.5s ease-in-out;
+	    cursor: pointer;
+	    max-width: 100px;
+	}
+	.About {
+	    background: url(../img/about.png) no-repeat center;
+	    background-size: cover;
+	    padding:0;
+	}
+	.counter {
+	    margin: 19px 0;
+	    text-align: center;
+	}
+	.owl-carousel .owl-item img {
+	    display: block;
+	    max-width: 100px;
+	}
+	.counter h1 {
+	    font-size: 40px;
+	    color: #ff690f;
+	    font-weight: 800;
+	}
+	.slider-iteam p {
+	    font-size: 18px;
+	    font-size: 18px;
+	    margin: 0;
+	    text-align: center;
+	}
+	/*.owl-theme .owl-dots, .owl-theme .owl-nav {
+	    text-align: center;
+	    -webkit-tap-highlight-color: transparent;
+	}*/
+	.info-side i {
+	    color: #ff600a;
+	    font-size: 20px;
+	    /* margin: 20px 20px 20px 0; */
+	    margin: 14px;
+	    position: relative;
+	    width: 40px;
+	    height: 40px;
+	    line-height: 40px;
+	    text-align: center;
+	    opacity: 1;
+	}
+	.info-side span {
+	    font-size: 11px;
+	    color: #fff;
+	}
+	.footer-social{
+		text-align: center;
+	}
+}
